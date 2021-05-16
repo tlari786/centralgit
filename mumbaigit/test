@@ -1,0 +1,3 @@
+cat /etc/password|cut -f 0-20|while read xx
+ls -l $xx
+done
