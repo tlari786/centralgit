@@ -5,3 +5,7 @@ done
 cat /etc/password|cut -d 0-25|while read xx
 ls -l $xx
 done
+lspv|grep hdisk|while read xx
+do
+lsattr -El $xx
+done
